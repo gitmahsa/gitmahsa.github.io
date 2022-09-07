@@ -14,68 +14,20 @@
       <p style="color:white;"> <font size="3"> saeidim at oregonstate dot edu </p>
       </h1>
    </div>
-    <nav class="sidebar-nav">
-{% comment %}
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-
-{% endcomment %}
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-{% comment %}
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-{% endcomment %}
-    <!--  <span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
-    </nav>
-<nav>
-
-{% comment %}
-<div class="education-container container-block"  >
-                <h2 class="container-block-title"> <font  size="2px" color="#FFFFFF"> Education</font></h2>
-                <div class="item">
-                    <h4 class="degree"><font  size="2px" color="#FFFFFF">PhD in  Computer Science</font></h4>
-                    <h5 class="meta"><font  size="2px" color="#FFFFFF">Oregon State University</font></h5>
-                    <div class="time">2017 - Present</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree"><font  size="2px" color="#FFFFFF">MSc in Info Security</font></h4>
-                    <h5 class="meta"><font  size="2px" color="#FFFFFF">Amirkabir University of Technology</font></h5>
-                    <div class="time">2011 - 2013</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree"><font  size="2px" color="#FFFFFF">BS in IT Engineering/Software Engineering</font></h4>
-                    <h5 class="meta"><font  size="2px" color="#FFFFFF">Amirkabir University of Technology</font></h5>
-                    <div class="time">2007 - 2011</div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-{% endcomment %}
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-<ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#">About</a></li>
-      
-       
+   <nav>
+    
+	<ul class="navbar-nav">
+        	<li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#">About</a></li>       
         
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Publications">Publications</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Awards">Awards</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Service">Service</a></li>
+       		 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Publications">Publications</a></li>
+        	 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Awards">Awards</a></li>
+        	 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Service">Service</a></li>
 
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Mentorship">Mentorship</a></li>
-</ul>
-</div>
-</nav>
- <span class="sidebar-nav-item"></span>
+        	 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./#Mentorship">Mentorship</a></li>
+	</ul>
+
+   </nav>
+   <span class="sidebar-nav-item"></span>
     <!-- <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p> -->
     <p> Designed by <a href="https://github.com/mdo"> mdo </a></p>
   </div>
