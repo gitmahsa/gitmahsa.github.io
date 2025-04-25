@@ -27,4 +27,4 @@ github:
 plugins:
   - jekyll-paginate
   - jekyll-gist
-  - redcarpet
+  - kramdown
